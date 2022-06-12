@@ -450,7 +450,7 @@ h6 {
 }
 .nk-decorated-h-2::after,
 .nk-decorated-h-2::before {
-    border-bottom-color: #2f3541;
+    border-bottom-color: #f8991d;
 }
 .nk-decorated-h-3 {
     display: flex;
@@ -4565,20 +4565,20 @@ img.rounded {
 .nk-btn-hover-color-main-1.hover,
 .nk-btn-hover-color-main-1:hover {
     background-color: #f8991d;
-    border-color: #a5102c;
+    /* border-color: #a5102c; */
 }
 .nk-btn-hover-color-main-1.active,
 .nk-btn-hover-color-main-1:active {
-    background-color: #c11334;
-    border-color: #8a0e25;
+    background-color: #f8991d;
+    /* border-color: #8a0e25; */
 }
 .nk-btn-hover-color-main-1.nk-btn-outline.hover,
 .nk-btn-hover-color-main-1.nk-btn-outline:hover {
-    color: #af112f;
+    color: #f8991d;
 }
 .nk-btn-hover-color-main-1.nk-btn-outline.active,
 .nk-btn-hover-color-main-1.nk-btn-outline:active {
-    color: #800d22;
+    color: #f8991d;
 }
 .nk-btn-hover-color-main-2.nk-btn-color-white.active,
 .nk-btn-hover-color-main-2.nk-btn-color-white.hover,
