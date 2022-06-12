@@ -21,10 +21,11 @@
         <link rel="stylesheet" href="assets/vendor/bootstrap-slider/dist/css/bootstrap-slider.min.css" />
         <link  rel="stylesheet" type="text/css" href="assets/vendor/summernote/dist/summernote-bs4.css" />
         <link rel="stylesheet" href="assets/css/custom.css" />
-        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
     </head>
 
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
         <header class="nk-header nk-header-opaque">
             <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-autohide">
                 <div class="container">
@@ -34,7 +35,10 @@
                         </a>
                         <ul class="nk-nav nk-nav-right d-none d-lg-table-cell" data-nav-mobile="#nk-nav-mobile">
                             <li>
-                                <a href="#"> Inicio </a>
+                                <a href="http://127.0.0.1:5500"> Inicio </a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/blog.html"> Blog </a>
                             </li>
                             <li>
                                 <a href="#"> Acerca de Nosotros </a>
@@ -80,7 +84,7 @@
         </div>
 
         <div class="nk-main">
-            <div class="nk-gap-1"></div>
+            <!-- <div class="nk-gap-1"></div> -->
             <!-- <div class="container">
                 <ul class="nk-breadcrumbs">
                     <li><span>Blog</span></li>
@@ -93,45 +97,47 @@
                 <div class="nk-blog-fullwidth">
                     <div class="nk-blog-post">
                         <a href="blog-article.html" class="nk-post-img">
-                            <img src="assets/images/post-1-fw.jpg" alt="Smell magic in the air. Or maybe barbecue" />
+                            <img src="assets/images/post-1-fw.jpg" alt="Smell magic in the air. Or maybe barbecue" style="margin-bottom: -1px;" />
                             <span class="nk-post-comments-count">4</span>
                         </a>
-                        <div class="nk-gap-2"></div>
-                        <div class="row vertical-gap">
-                            <div class="col-md-7 col-lg-8">
-                                <h2 class="nk-post-title h4">
-                                    <a href="blog-article.html">Smell magic in the air. Or maybe barbecue</a>
-                                </h2>
-                                <div class="nk-gap"></div>
-                                <div class="nk-post-text">
-                                    <p>
-                                        She clutched the matron by the arm, and
-                                        forcing her into a chair by the bedside,
-                                        was about to speak, when looking round,
-                                        she caught sight of the two old women
-                                        bending forward in the attitude of eager
-                                        listeners. They belong to the old
-                                        gentleman, said Oliver, wringing his
-                                        hands; to the good, kind, old gentleman
-                                        who took me into his house, and had me
-                                        nursed, when I was near dying of the
-                                        fever . Oh, pray send them back; send
-                                        him back the books and money . Keep me
-                                        here all my life long; but pray, pray
-                                        send them back...
-                                    </p>
+                        <div class="custom-index-card-container">
+                            <div class="nk-gap-2"></div>
+                            <div class="row vertical-gap">
+                                <div class="col-md-7 col-lg-8">
+                                    <h2 class="nk-post-title h4">
+                                        <a href="blog-article.html">Smell magic in the air. Or maybe barbecue</a>
+                                    </h2>
+                                    <div class="nk-gap"></div>
+                                    <div class="nk-post-text">
+                                        <p>
+                                            She clutched the matron by the arm, and
+                                            forcing her into a chair by the bedside,
+                                            was about to speak, when looking round,
+                                            she caught sight of the two old women
+                                            bending forward in the attitude of eager
+                                            listeners. They belong to the old
+                                            gentleman, said Oliver, wringing his
+                                            hands; to the good, kind, old gentleman
+                                            who took me into his house, and had me
+                                            nursed, when I was near dying of the
+                                            fever . Oh, pray send them back; send
+                                            him back the books and money . Keep me
+                                            here all my life long; but pray, pray
+                                            send them back...
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-5 col-lg-4">
-                                <div class="nk-post-by">
-                                    <img src="assets/images/avatar-gordo.jpg" alt="Hitman" class="rounded-circle" width="60" />
-                                    by <a href="https://nkdev.info">Esteban "El Carry" Orozco</a> <br />
-                                    el 30 de febrero de 2022 <br />
-                                    4 comentarios
-                                </div>
-                                <div class="nk-gap-3"></div>
-                                <div class="text-right">
-                                    <a href="blog-article.html" class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1">Seguir Leyendo</a>
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="nk-post-by">
+                                        <img src="assets/images/avatar-gordo.jpg" alt="Hitman" class="rounded-circle" width="60" />
+                                        by <a href="https://nkdev.info">Esteban "El Carry" Orozco</a> <br />
+                                        el 30 de febrero de 2022 <br />
+                                        4 comentarios
+                                    </div>
+                                    <div class="nk-gap-3"></div>
+                                    <div class="text-right">
+                                        <a href="blog-article.html" class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1">Seguir Leyendo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -142,42 +148,44 @@
                             <img src="assets/images/post-2-fw.jpg" alt="Grab your sword and fight the Horde" />
                             <span class="nk-post-comments-count">7</span>
                         </a>
-                        <div class="nk-gap-2"></div>
-                        <div class="row vertical-gap">
-                            <div class="col-md-8 col-lg-9">
-                                <h2 class="nk-post-title h4">
-                                    <a href="blog-article.html">Grab your sword and fight the Horde</a>
-                                </h2>
-                                <div class="nk-gap"></div>
-                                <div class="nk-post-text">
-                                    <p>
-                                        Looking cautiously round, to ascertain
-                                        that they were not overheard, the two
-                                        hags cowered nearer to the fire, and
-                                        chuckled heartily. Nancy stooped below
-                                        the shutters, and Oliver heard the sound
-                                        of a bell. They crossed to the opposite
-                                        side of the street, and stood for a few
-                                        moments under a lamp. A noise, as if a
-                                        sash window were gently raised, was
-                                        heard; and soon afterwards the door
-                                        softly opened. Mr. Sikes then seized the
-                                        terrified boy by the collar with very
-                                        little ceremony; and all three were
-                                        quickly inside the house...
-                                    </p>
+                        <div class="custom-index-card-container">
+                            <div class="nk-gap-2"></div>
+                            <div class="row vertical-gap">
+                                <div class="col-md-8 col-lg-9">
+                                    <h2 class="nk-post-title h4">
+                                        <a href="blog-article.html">Grab your sword and fight the Horde</a>
+                                    </h2>
+                                    <div class="nk-gap"></div>
+                                    <div class="nk-post-text">
+                                        <p>
+                                            Looking cautiously round, to ascertain
+                                            that they were not overheard, the two
+                                            hags cowered nearer to the fire, and
+                                            chuckled heartily. Nancy stooped below
+                                            the shutters, and Oliver heard the sound
+                                            of a bell. They crossed to the opposite
+                                            side of the street, and stood for a few
+                                            moments under a lamp. A noise, as if a
+                                            sash window were gently raised, was
+                                            heard; and soon afterwards the door
+                                            softly opened. Mr. Sikes then seized the
+                                            terrified boy by the collar with very
+                                            little ceremony; and all three were
+                                            quickly inside the house...
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-lg-3">
-                                <div class="nk-post-by">
-                                    <img src="assets/images/avatar-2.jpg" alt="Witch Murder" class="rounded-circle" width="60" />
-                                    by <a href="https://nkdev.info">Witch Murder</a> <br />
-                                    in Sep 5, 2018 <br />
-                                    7 comments
-                                </div>
-                                <div class="nk-gap-3"></div>
-                                <div class="text-right">
-                                    <a href="blog-article.html" class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1" >Read More</a>
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="nk-post-by">
+                                        <img src="assets/images/avatar-2.jpg" alt="Witch Murder" class="rounded-circle" width="60" />
+                                        by <a href="https://nkdev.info">Witch Murder</a> <br />
+                                        in Sep 5, 2018 <br />
+                                        7 comments
+                                    </div>
+                                    <div class="nk-gap-3"></div>
+                                    <div class="text-right">
+                                        <a href="blog-article.html" class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1" >Read More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -452,8 +460,8 @@
             </footer>
         </div>
 
-        <img class="nk-page-background-top" src="assets/images/bg-4.jpg" alt="" />
-        <img class="nk-page-background-bottom" src="assets/images/bg-bottom-1.jpg" alt="" />
+        <!-- <img class="nk-page-background-top" src="assets/images/bg-4.jpg" alt="" /> -->
+        <!-- <img class="nk-page-background-bottom" src="assets/images/bg-bottom-1.jpg" alt="" /> -->
 
         <div class="nk-modal modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-sm" role="document">
@@ -528,6 +536,7 @@
             </div>
         </div>
 
+        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
         <script src="assets/vendor/object-fit-images/dist/ofi.min.js"></script>
         <script src="assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
         <script src="assets/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
@@ -552,5 +561,6 @@
         <script src="assets/plugins/nk-share/nk-share.js"></script>
         <script src="assets/js/goodgames.min.js"></script>
         <script src="assets/js/goodgames-init.js"></script>
+        <script src="assets/js/custom.js"></script>
     </body>
 </html>
