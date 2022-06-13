@@ -20,6 +20,10 @@ $( document ).ready(function() {
     //     //   el: '.swiper-scrollbar',
     //     // },
     // });
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 });
 
 var mybutton = document.getElementById("myBtn");
@@ -39,4 +43,10 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+function Copy() {
+    let url = document.location.href
+
+    navigator.clipboard.writeText(url)
 }
