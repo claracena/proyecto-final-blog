@@ -8052,6 +8052,28 @@ div.nk-error {
 
 .custom-tag {
     background-color: #485c6a !important;
+    border-radius: 5px !important;
+    /* border-radius: 0 5px 5px 0 !important; */
+    margin-left: 0 !important;
+}
+
+.custom-tag-article-image {
+    background-color: #485c6a !important;
+    /* border-radius: 5px !important; */
+    border-radius: 0 5px 5px 0 !important;
+    margin-left: 0 !important;
+}
+
+.custom-tag-before {
+    width: 10px !important;
+    max-width: 10px !important;
+    padding: 0 !important;
+    height: 27px;
+    border-radius: 0 !important;
+    vertical-align: bottom;
+    display: inline-block;
+    background-color: green !important;
+    margin-right: 0 !important;
 }
 
 .nk-social-links-2.nk-social-links-3 > li > .social-copy-link.hover,
