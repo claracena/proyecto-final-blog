@@ -8091,3 +8091,16 @@ div.nk-error {
     color: #fff;
     background-color: #f8991d;
 }
+
+.ql-toolbar.ql-snow {
+	background-color: white !important;
+	border-radius: 5px 5px 0 0 !important;
+}
+
+.ql-container.ql-snow {
+    border-radius: 0 0 5px 5px !important;
+}
+
+.ql-editor {
+    min-height: 400px;
+}
