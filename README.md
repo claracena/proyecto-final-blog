@@ -18,6 +18,7 @@ Apps:
 * blog: App para mostrar, agregar, editar o eliminar artículos del blog (con comentarios individuales)
 * profile: App para ver el perfil de cualquier usuario y editar el propio
 * messenger: App para mensajería privada entre usuarios
+
    Páginas estáticas (en una sola app llamada staticapp):
    * home: App principal (página de inicio y noticias estáticas por ahora)
    * about us
