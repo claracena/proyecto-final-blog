@@ -17,7 +17,7 @@ Apps:
 * account: Manejo de sesión, ver el perfil de cualquier usuario y editar el propio
 * blog: App para mostrar, agregar, editar o eliminar artículos del blog (con comentarios individuales)
 * messenger: App para mensajería privada entre usuarios
-* contactus: Contactenos
+* contact: Contactenos
 
    Páginas estáticas (en una sola app llamada staticapp):
    * home: App principal (página de inicio y noticias estáticas por ahora)
