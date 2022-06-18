@@ -75,7 +75,7 @@
                                         <p class="custom-menu-no-link">{{request.user.username}}</p>
                                     </li>
                                     <li>
-                                        <a href="#"> Mi Perfil </a>
+                                        <a href="{% url 'profile' %}"> Mi Perfil </a>
                                     </li>
                                     <li>
                                         <a href="#"> Publicar Articulo </a>
@@ -131,18 +131,8 @@
 
             {% endblock %}
 
-                <div class="nk-gap-2"></div>
-            
-                <!-- <footer class="nk-footer">
-                    <div class="nk-copyright">
-                        <div class="container">
-                            <div class="nk-copyright-left">
-                                Copyright &copy; 2022
-                                <a href="#" target="_blank">GAMERBLOG</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer> -->
+            <div class="nk-gap-2"></div>
+
         </div>
         </div>
         </div>
@@ -180,7 +170,7 @@
         </div>
 
         <div class="nk-modal modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -193,42 +183,21 @@
                         <form action="{% url 'login' %}" class="nk-form text-white" method="post">
                             {% csrf_token%}
                             <div class="row vertical-gap">
-                                <div class="col-md-7">
-                                    Con e-mail y contrase&ntilde;a:
+                                <div class="col-md-12">
+                                    Con su direcci&oacute;n de e-mail y contrase&ntilde;a:
                                     <div class="nk-gap"></div>
                                     <input type="email" value="" name="email" class="form-control" placeholder="E-mail" />
                                     <div class="nk-gap"></div>
                                     <input type="password" value="" name="password" class="required form-control" placeholder="Contrase&ntilde;a" />
                                 </div>
-                                <div class="col-md-5">
-                                    O sus redes sociales:
-                                    <div class="nk-gap"></div>
-                                    <ul class="nk-social-links-2">
-                                        <li>
-                                            <a class="nk-social-facebook" href="#" ><span class="fab fa-facebook"></span></a>
-                                        </li>
-                                        <li>
-                                            <a class="nk-social-google-plus" href="#" ><span class="fab fa-google-plus" ></span></a>
-                                        </li>
-                                        <li>
-                                            <a class="nk-social-twitter" href="#" ><span class="fab fa-twitter"></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                             <div class="nk-gap-1"></div>
                             <div class="row vertical-gap">
-                                <div class="col-md-7">
-                                    <button type="submit" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block">Ingresar</button>
-                                    <!-- <a href="" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block" >Ingresar</a> -->
-                                </div>
-                                <div class="col-md-5">
-                                    <!-- <div class="mnt-5">
-                                        <small><a href="#">Olvid&oacute; su contrase&ntilde;a?</a></small>
-                                    </div> -->
-                                    <div class="mnt-5">
+                                <div class="col-md-12">
+                                    <div class="mnt-5 mb-5">
                                         <small><a href="{% url 'register' %}">No ten&eacute;s cuenta? Registrate!!!!</a></small>
                                     </div>
+                                    <button type="submit" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block">Ingresar</button>
                                 </div>
                             </div>
                         </form>

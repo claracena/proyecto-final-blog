@@ -69,3 +69,6 @@ def get_redirect_if_exists(request):
 
 def blogView(request):
     return render(request, 'account/blog.html', {})
+
+def profileView(request):
+    return render(request, 'account/profile.html', {})
