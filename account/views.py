@@ -36,12 +36,14 @@ def loginView(request, *args, **kwargs):
     user = request.user
     if user.is_authenticated:
         return redirect('home')
-
+    # print(request.POST['email'])
     if request.POST:
+        print(request.POST['email'])
         form = AccountAuthenticationForm(request.POST)
         if form.is_valid():
-            email = request.POST.get['email']
-            password = request.POST.get['password']
+            print(request.POST['email'])
+            email = request.POST['email']
+            password = request.POST['password']
             user = authenticate(email=email, password=password)
             if user:
                 login(request, user)
