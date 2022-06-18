@@ -38,21 +38,24 @@ def loginView(request, *args, **kwargs):
         return redirect('home')
     # print(request.POST['email'])
     if request.POST:
-        print(request.POST['email'])
-        form = AccountAuthenticationForm(request.POST)
-        if form.is_valid():
-            print(request.POST['email'])
-            email = request.POST['email']
-            password = request.POST['password']
-            user = authenticate(email=email, password=password)
-            if user:
-                login(request, user)
-                destination = get_redirect_if_exists(request)
-                if destination:
-                    return redirect(destination)
-                return redirect('home')
-            else:
-                context['login_form'] = form
+        email = request.POST['email']
+        password = request.POST['password']
+        user = authenticate(email=email, password=password)
+        # print(request.POST['email'])
+        # form = AccountAuthenticationForm(request.POST)
+        # if form.is_valid():
+        #     # print(form)
+        #     email = request.POST['email']
+        #     password = request.POST['password']
+        #     user = authenticate(email=email, password=password)
+        if user:
+            login(request, user)
+            destination = get_redirect_if_exists(request)
+            if destination:
+                return redirect(destination)
+            return redirect('home')
+        else:
+            return render(request, 'account/login.html', context)
 
     return render(request, 'account/login.html', context)
 

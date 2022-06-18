@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block title %} Login {% endblock %}
 
 {% block content %}
 {% load static %}
@@ -14,9 +15,9 @@
             <input type="email" name="email" class="form-control" maxlength="80"><br>
             <label for="password">Contrase&ntilde;a</label>
             <input type="password" name="password" class="form-control" maxlength="80"><br>
-            <div class="mnt-5">
+            <!-- <div class="mnt-5">
                 <small><a href="#">Olvid&oacute; su contrase&ntilde;a?</a></small>
-            </div>
+            </div> -->
             <div class="mnt-5">
                 <small><a href="{% url 'register' %}">No ten&eacute;s cuenta? Registrate!!!!</a></small>
             </div>

@@ -8137,3 +8137,12 @@ html, body {
 label {
     margin-top: 20px !important;
 }
+
+.custom-menu-no-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.15s color;
+    display: block;
+    padding: 6px 17px;
+    padding-right: 64px;
+}
