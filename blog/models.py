@@ -8,17 +8,10 @@ class Blog(models.Model):
     body = models.TextField()
     image = models.ImageField(upload_to='images/')
     comments = models.IntegerField(default=0)
+    category = models.CharField(max_length=255)
 
     def __str__(self):
         return self.title
 
     def summary(self):
         return self.body[:100]
-
-class Comments(models.Model):
-    # user = 
-    comment = models.CharField(max_length=255)
-    pub_date = models.DateTimeField()
-
-    def __str__(self):
-        return self.comment
