@@ -129,3 +129,17 @@ dmypy.json
 .pyre/
 
 /venv/
+db.sqlite3
+gamerblog/settings.py
+gamerblog/__pycache__/__init__.cpython-310.pyc
+gamerblog/__pycache__/settings.cpython-310.pyc
+gamerblog/__pycache__/urls.cpython-310.pyc
+gamerblog/__pycache__/views.cpython-310.pyc
+gamerblog/__pycache__/wsgi.cpython-310.pyc
+staticapp/__pycache__/__init__.cpython-310.pyc
+staticapp/__pycache__/admin.cpython-310.pyc
+staticapp/__pycache__/apps.cpython-310.pyc
+staticapp/__pycache__/models.cpython-310.pyc
+staticapp/__pycache__/urls.cpython-310.pyc
+staticapp/__pycache__/views.cpython-310.pyc
+staticapp/migrations/__pycache__/__init__.cpython-310.pyc
