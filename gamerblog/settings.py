@@ -26,8 +26,13 @@ SECRET_KEY = 'django-insecure-1=4ixkr0c-%#%=(3zoo!9+tql62stg&@*cxe10c%6-2r8wsucp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
+AUTH_USER_MODEL = 'account.Account'
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.AllowAllUsersModelBackend',
+    'account.backends.CaseInsensitiveModelBackend'
+)
 
 # Application definition
 
@@ -39,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'staticapp.apps.StaticappConfig',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -77,21 +83,28 @@ WSGI_APPLICATION = 'gamerblog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         # 'OPTIONS': {
+#         #     'service': 'gamerblog',
+#         #     'passfile': '.pgpass',
+#         # },
+#         'NAME': 'gamerblog',
+#         'USER': 'gamer',
+#         'PASSWORD': 'Genius2008',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        # 'OPTIONS': {
-        #     'service': 'gamerblog',
-        #     'passfile': '.pgpass',
-        # },
-        'NAME': 'gamerblog',
-        'USER': 'postgres',
-        'PASSWORD': 'Genius2008',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+        # 'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
