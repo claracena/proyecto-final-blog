@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main>
+    <section id="contact" class="light-bg">
+        <div class="container inner-top-sm inner-bottom d-flex justify-content-center">
+            <div class="col-lg-6 custom-container">
+                <form action='' method='POST'>{% csrf_token %}
+                    <h1>Contactanos</h1>
+                    <p>Si tienes alguna duda o sugerencia, puedes contactarnos a través de nuestro formulario de contacto.</p>
+                    <small>Todos los campos obligatorios</small>
+                    {{ form }}
+                    <input type='submit' class="btn btn-primary" value='Enviar'>
+                    <br>
+                    También puede enviarnos un correo a: <a href="mailto:contacto@coderblog.com">contacto@coderblog.com</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+{% endblock %}
